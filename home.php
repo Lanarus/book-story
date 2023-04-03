@@ -62,6 +62,15 @@
 
 </section>
 
+<section class="home-contact">
+
+   <div class="content">
+      <h3>have any questions?</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+      <a href="contact.php" class="white-btn">contact us</a>
+   </div>
+
+</section>
 
 
    <?php include 'footer.php'; ?>
