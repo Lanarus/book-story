@@ -49,7 +49,13 @@ section{
    padding:3rem 2rem;
 }
 
-
+.title{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 4rem;
+}
 
 .form-container{
     min-height: 100vh;
