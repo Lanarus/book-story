@@ -65,6 +65,20 @@ section{
    font-size: 4rem;
 }
 
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   color:var(--white);
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
 .form-container{
     min-height: 100vh;
     background-color: var(--light-bg);
