@@ -165,7 +165,26 @@ section{
    max-width: 1200px;
    margin:0 auto;
 }
+.header .header-2{
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+}
 
+.header .header-2.active{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 1000;
+}
+
+.header .header-2 .flex{
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin:0 auto;
+   position: relative;
+}
 
 
  .home{
