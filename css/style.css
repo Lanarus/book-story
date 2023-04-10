@@ -185,7 +185,28 @@ section{
    margin:0 auto;
    position: relative;
 }
+.header .header-1 .flex .share a{
+   font-size: 2.5rem;
+   margin-right: 1.5rem;
+   color:var(--black);
+}
 
+.header .header-1 .flex .share a:hover{
+   color:var(--purple);
+}
+
+.header .header-1 .flex p{
+   font-size: 2rem;
+   color:var(--light-color);
+}
+
+.header .header-1 .flex p a{
+   color:var(--purple);
+}
+
+.header .header-1 .flex p a:hover{
+   text-decoration: underline;
+}
 
  .home{
    min-height: 70vh;
