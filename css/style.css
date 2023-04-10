@@ -139,21 +139,32 @@ section{
     margin:1rem 0;
  }
  
- .form-container form p{
+.form-container form p{
     padding-top: 1.5rem;
     font-size: 2rem;
     color:var(--black);
  }
  
- .form-container form p a{
+.form-container form p a{
     color:var(--purple);
  }
  
- .form-container form p a:hover{
+.form-container form p a:hover{
     text-decoration: underline;
  }
  
+.header .header-1{
+   background-color: var(--light-bg);
+}
 
+.header .header-1 .flex{
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin:0 auto;
+}
 
 
 
