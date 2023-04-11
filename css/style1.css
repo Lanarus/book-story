@@ -132,6 +132,14 @@ section{
 .heading p a:hover{
    text-decoration: underline;
 }
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+      opacity: .2s;
+   }
+}
+
 .form-container{
     min-height: 100vh;
     background-color: var(--light-bg);
@@ -435,6 +443,62 @@ section{
    font-size: 1.7rem;
 }
 
+.reviews{
+   background-color: var(--light-bg);
+}
+
+.reviews .box-container{
+   max-width: 1200px;
+   margin:0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   align-items: center;
+   gap:1.5rem;
+   justify-content: center;
+}
+
+.reviews .box-container .box{
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   border-radius: .5rem;
+   text-align: center;
+   padding:2rem;
+}
+
+.reviews .box-container .box img{
+   height: 10rem;
+   width: 10rem;
+   border-radius: 50%;
+}
+
+.reviews .box-container .box p{
+   padding:1rem 0;
+   line-height: 2;
+   color:var(--light-color);
+   font-size: 1.5rem;
+}
+
+.reviews .box-container .box .stars{
+   background-color: var(--light-bg);
+   display: inline-block;
+   margin:.5rem 0;
+   border-radius: .5rem;
+   border:var(--border);
+   padding:.5rem 1.5rem;
+}
+
+.reviews .box-container .box .stars i{
+   font-size: 1.7rem;
+   color:var(--orange);
+   margin:.2rem;
+}
+
+.reviews .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   margin-top: 1rem;
+}
 
 
 
