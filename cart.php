@@ -57,6 +57,17 @@
             ?>
         </div>
 
+        <div style="margin-top: 2rem; text-align:center;">
+            <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">delete all</a>
+        </div>
+
+        <div class="cart-total">
+            <p>grand total : <span>$<?php echo $grand_total; ?>/-</span></p>
+            <div class="flex">
+                <a href="shop.php" class="option-btn">continue shopping</a>
+                 <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
+            </div>
+        </div>
     </section>   
 
 
