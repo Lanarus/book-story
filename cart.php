@@ -30,6 +30,31 @@
         <h1 class="title">products added</h1>
 
         <div class="box-container">
+            <?php
+                $grand_total = 0;
+                $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+                if(mysqli_num_rows($select_cart) > 0){
+                    while($fetch_cart = mysqli_fetch_assoc($select_cart)){   
+            ?>
+            <div class="box">
+                <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
+                <img src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt="">
+                <div class="name"><?php echo $fetch_cart['name']; ?></div>
+                <div class="price">$<?php echo $fetch_cart['price']; ?>/-</div>
+                <form action="" method="post">
+                    <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
+                    <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
+                    <input type="submit" name="update_cart" value="update" class="option-btn">
+                </form>
+                <div class="sub-total"> sub total : <span>$<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>/-</span> </div>
+            </div>
+            <?php
+            $grand_total += $sub_total;
+                }
+            }else{
+                 echo '<p class="empty">your cart is empty</p>';
+            }
+            ?>
         </div>
 
     </section>   
