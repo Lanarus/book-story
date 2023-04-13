@@ -694,7 +694,36 @@ section{
    opacity: .5;
    user-select: none;
 }
+.display-order{
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+   padding-bottom: 0;
+}
 
+.display-order p{
+   background-color: var(--light-bg);
+   color:var(--black);
+   font-size: 2rem;
+   padding:1rem 1.5rem;
+   border:var(--border);
+   display: inline-block;
+   margin:.5rem;
+}
+
+.display-order p span{
+   color:var(--red);
+}
+
+.display-order .grand-total{
+   margin-top: 2rem;
+   font-size: 2.5rem;
+   color:var(--light-color);
+}
+
+.display-order .grand-total span{
+   color:var(--red);
+}
 
 .placed-orders .box-container{
    max-width: 1200px;
